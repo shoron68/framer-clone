@@ -49,7 +49,7 @@ export default function ServiceSection() {
 
 
   return (
-    <div className="mx-[50px]">
+    <div className="max-w-[1905px] mx-auto px-[50px]">
       <div className=" mt-[140px] ml-[920px]  mb-[80px]">
         <div className="">
           <motion.div

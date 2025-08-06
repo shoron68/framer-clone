@@ -70,54 +70,54 @@ const fadeUpWord = {
 export default function NewsPage() {
   return (
     <div className="pt-[200px] pb-[140px] bg-[#F8EDE3]">
-      <div className="mx-[50px]">
+      <div className="max-w-[1905px] mx-auto px-[50px]">
         <h2 className="text-[96px] font-archivo font-medium text-[#8D493A] leading-[100%] tracking-[-0.03em] w-[800px] mx-auto text-center flex flex-wrap gap-3 justify-center">
-  <motion.span
-    variants={fadeUpWord}
-    initial="hidden"
-    whileInView="visible"
-    viewport={{ once: true, amount: 0.3 }}
-    custom={0}
-  >
-    Expert
-  </motion.span>
-  <motion.span
-    variants={fadeUpWord}
-    initial="hidden"
-    whileInView="visible"
-    viewport={{ once: true, amount: 0.4 }}
-    custom={1}
-  >
-    Insights
-  </motion.span>
-  <motion.span
-    variants={fadeUpWord}
-    initial="hidden"
-    whileInView="visible"
-    viewport={{ once: true, amount: 0.5 }}
-    custom={2}
-  >
-    and
-  </motion.span>
-  <motion.span
-    variants={fadeUpWord}
-    initial="hidden"
-    whileInView="visible"
-    viewport={{ once: true, amount: 0.6 }}
-    custom={3}
-  >
-    Design
-  </motion.span>
-  <motion.span
-    variants={fadeUpWord}
-    initial="hidden"
-    whileInView="visible"
-    viewport={{ once: true, amount: 0.7 }}
-    custom={4}
-  >
-    Inspiration
-  </motion.span>
-</h2>
+          <motion.span
+            variants={fadeUpWord}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            custom={0}
+          >
+            Expert
+          </motion.span>
+          <motion.span
+            variants={fadeUpWord}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.4 }}
+            custom={1}
+          >
+            Insights
+          </motion.span>
+          <motion.span
+            variants={fadeUpWord}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            custom={2}
+          >
+            and
+          </motion.span>
+          <motion.span
+            variants={fadeUpWord}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.6 }}
+            custom={3}
+          >
+            Design
+          </motion.span>
+          <motion.span
+            variants={fadeUpWord}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.7 }}
+            custom={4}
+          >
+            Inspiration
+          </motion.span>
+        </h2>
 
 
         <div className="mt-[60px] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">

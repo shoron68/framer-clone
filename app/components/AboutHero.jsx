@@ -33,7 +33,7 @@ const fadeUp = {
 export default function () {
     return (
         <div className="py-[140px]">
-            <div className="mx-[50px]">
+            <div className="max-w-[1905px] mx-auto px-[50px]">
                 <div className=" flex justify-center items-center ">
                     <h2 className="text-[96px] font-archivo font-medium text-[#8D493A] leading-[100%] tracking-[-0.03em] w-[800px] mx-auto text-center flex flex-wrap gap-3 justify-center mt-[100px]">
                         <motion.span

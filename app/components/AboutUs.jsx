@@ -55,7 +55,7 @@ export default function AboutUs() {
         };
     }, []);
     return (
-        <div className="mx-[50px]">
+        <div className="max-w-[1905px] mx-auto px-[50px]">
             <div className="py-[140px]">
                 <div className="flex justify-between">
                     <div className="">

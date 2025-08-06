@@ -63,7 +63,7 @@ const fadeUp = {
 export default function Design() {
     return (
         <div className="pt-[200px] pb-[140px]">
-            <div className="mx-[50px]">
+            <div className="max-w-[1905px] mx-auto px-[50px]">
                 <div className="">
                     <motion.h2
             className="text-[64px] md:text-[96px] font-archivo text-[#8D493A] font-regular w-[600px] mx-auto leading-tight"

@@ -30,7 +30,7 @@ const fadeUp = {
 export default function Awards() {
     return (
         <div className="py-[140px]">
-            <div className="mx-[50px]">
+            <div className="max-w-[1905px] mx-auto px-[50px]">
                 <div className="">
                     <motion.div 
                     variants={textfade}

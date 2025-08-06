@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Nav (){
     return (
-        <div className="fixed top-0 left-1/2 -translate-x-1/2 w-full z-50">
+        <div className="fixed top-[-20px] left-1/2 -translate-x-1/2 w-full z-50">
             <div className=" pr-[5px] pl-[20px] py-[5px] bg-[#F8EDE3] w-[700px] rounded-[5px] mx-auto mt-[30px] shadow-2xl">
                 <div className="flex items-center justify-between">
                     <div className="">
@@ -23,7 +23,7 @@ export default function Nav (){
                         </ul>
                     </div>
                     <div className="">
-                        <button className="py-[16px] px-[26px] bg-[#8D493A] text-[#F8EDE3] rounded-[5px] font-inter font-medium hover:bg-[#B85842] duration-500"><Link href="/contact">Contact us</Link></button>
+                        <button className="py-[16px] px-[26px] bg-[#8D493A] text-[#F8EDE3] rounded-[5px] font-inter font-medium hover:bg-[#B85842] duration-500 leading-[100%] "><Link href="/contact">Contact us</Link></button>
                     </div>
                 </div>
         </div>

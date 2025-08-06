@@ -32,7 +32,9 @@ const fadeUpWord = {
 export default function ContactPage() {
     return (
         <div className="py-[200px] bg-[#F8EDE3]">
-            <div className="px-[20px] md:px-[50px]">
+          <div className="max-w-[1905px] mx-auto px-[50px]">
+
+            <div className="">
                 <div className="">
                     <h2 className="text-[96px] font-archivo font-medium text-[#8D493A] leading-[100%] tracking-[-0.03em] w-[800px] mx-auto text-center flex flex-wrap gap-3 justify-center">
                       <motion.span
@@ -139,6 +141,7 @@ export default function ContactPage() {
                     </div>
                 </motion.div>
             </div>
+          </div>
         </div>
     );
 }
