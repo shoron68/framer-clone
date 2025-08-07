@@ -13,12 +13,12 @@ const cards = [
   {
     title: "Where Tradition Meets Mastery",
     subtitle: "Blending Tradition with Modern Elegance",
-    image: "	https://framerusercontent.com/images/cC9LIRH5Ao9H0pL925zPquahGI.jpeg",
+    image: "https://framerusercontent.com/images/cC9LIRH5Ao9H0pL925zPquahGI.jpeg",
   },
   {
     title: "Modern Elegance in Every Room",
     subtitle: "Redefining spaces with timeless style and innovation.",
-    image: "	https://framerusercontent.com/images/bzAxUIZb76NAbMbbTCNRKvwep8.jpeg",
+    image: "https://framerusercontent.com/images/bzAxUIZb76NAbMbbTCNRKvwep8.jpeg",
   },
   {
     title: "Luxurious Coastal Living",
