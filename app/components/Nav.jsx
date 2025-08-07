@@ -23,9 +23,9 @@ export default function Nav() {
     return (
         <motion.div
         variants={fadeUp}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.3 }}
+                     initial={{ opacity: 0, y: -20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.5, ease: "easeOut" }}
         className="fixed top-[-10px] left-1/2 -translate-x-1/2 w-full z-50">
             <div className="pr-[5px] pl-[20px] py-[5px] bg-[#F8EDE3] lg:w-[700px] w-[400px] items-center  lg:max-w-full rounded-[5px] mx-auto mt-[30px] shadow-2xl transition-all duration-500 ease-in-out">
                 <div className="flex items-center justify-between">
