@@ -22,13 +22,13 @@ export default function Nav() {
 
     return (
         <motion.div
-        variants={fadeUp}
-                     initial={{ opacity: 0, y: -20 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.5, ease: "easeOut" }}
-        className="fixed top-[-10px] left-1/2 -translate-x-1/2 w-full z-50">
+            variants={fadeUp}
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            className="fixed top-[-10px] left-1/2 -translate-x-1/2 w-full z-50">
             <div className="pr-[5px] pl-[20px] py-[5px] bg-[#F8EDE3] lg:w-[700px] w-[400px] items-center  lg:max-w-full rounded-[5px] mx-auto mt-[30px] shadow-2xl transition-all duration-500 ease-in-out">
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between items-center">
                     <h3 className="text-[20px] font-inter text-[#8D493A] font-bold">
                         <Link href="/">Troscán</Link>
                     </h3>
@@ -51,7 +51,9 @@ export default function Nav() {
                         </Link>
                     </div>
                     <div className="md:hidden">
-                        <button onClick={() => setIsOpen(!isOpen)}>
+                        <button 
+                        className="mt-[5px] mr-[10px]"
+                        onClick={() => setIsOpen(!isOpen)}>
                             {isOpen ? (
                                 <X className="text-[#F8EDE3] bg-[#8D493A] rounded-[2px]" />
                             ) : (
