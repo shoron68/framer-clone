@@ -72,7 +72,7 @@ export default function Inspire() {
                             className="lg:h-[501px] lg:w-[595px] w-full h-full">
                                 <div className=" overflow-hidden rounded-[10px]">
                                     <Image
-                                        className="lg:h-[505px] h-[338px] w-[398px] lg:w-[595px] object-cover transition-transform duration-500 ease-in-out hover:scale-105"
+                                        className="lg:h-[505px] h-[338px] w-full lg:w-[595px] object-cover transition-transform duration-500 ease-in-out hover:scale-105"
                                         src="https://framerusercontent.com/images/bZdh0mETTRfnrDNMinaVWCZqhqs.jpeg"
                                         width={595}
                                         height={501}
@@ -108,7 +108,7 @@ export default function Inspire() {
                             className="lg:h-[501px] lg:w-[595px] w-full h-full lg:mt-0 mt-[20px]">
                                 <div className=" overflow-hidden rounded-[10px]">
                                     <Image
-                                        className="lg:h-[505px] h-[338px] w-[398px] lg:w-[595px] object-cover transition-transform duration-500 ease-in-out hover:scale-105"
+                                        className="lg:h-[505px] h-[338px] w-full lg:w-[595px] object-cover transition-transform duration-500 ease-in-out hover:scale-105"
                                         src="https://framerusercontent.com/images/HXD1LGGH4sdyu2AfKcILOBWjBM.jpeg"
                                         width={595}
                                         height={501}
@@ -143,7 +143,7 @@ export default function Inspire() {
                             className="lg:h-[501px] lg:w-[595px] w-full h-full lg:mt-0 mt-[20px]">
                                 <div className=" overflow-hidden rounded-[10px]">
                                     <Image
-                                        className="lg:h-[505px] h-[338px] w-[398px] lg:w-[595px] object-cover transition-transform duration-500 ease-in-out hover:scale-105"
+                                        className="lg:h-[505px] h-[338px] w-full lg:w-[595px] object-cover transition-transform duration-500 ease-in-out hover:scale-105"
                                         src="https://framerusercontent.com/images/xzFrK8RnnKFFvFnsttyDo4BcCE.jpeg"
                                         width={595}
                                         height={501}
