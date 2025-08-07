@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion';
 import Image from "next/image";
 import { useEffect, useRef, useState } from 'react';
+import aboutusimg from "../imagess/aboutus.jpg"
 
 const textfade = {
     hidden: { opacity: 0, y: 50 },
@@ -121,7 +122,7 @@ export default function AboutUs() {
                             >
                                 <Image
                                     className="rounded-[15px] object-cover"
-                                    src="https://framerusercontent.com/images/vJzsJOlbUK8qkA5xxZA18jSC6SI.jpeg"
+                                    src={aboutusimg}
                                     alt="Description"
                                     fill
                                 />

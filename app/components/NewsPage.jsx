@@ -2,42 +2,48 @@
 
 import { motion } from 'framer-motion';
 import Image from "next/image";
+import nimg1 from "../imagess/nimg1.jpg"
+import nimg2 from "../imagess/nimg2.jpg"
+import nimg3 from "../imagess/nimg3.jpg"
+import nimg4 from "../imagess/nimg4.jpg"
+import nimg5 from "../imagess/nimg5.jpg"
+import nimg6 from "../imagess/nimg6.jpg"
 
 const cards = [
   {
     title: "How to Choose the Perfect Lighting for Every Room ",
     subtitle: "Illuminating Spaces with Style and Purpose",
-    image: "https://framerusercontent.com/images/J9WUBD0d1gg7X5rmW8sz2Z376mQ.jpeg",
+    image: nimg1,
     date: "January 2, 2024",
   },
   {
     title: "The Rise of Minimalism in Modern Homes",
     subtitle: "Less Clutter, More Purpose in Interior Design.",
-    image: "https://framerusercontent.com/images/JNg12r2XAvXXvwQS8ZeRTfcfpI.jpeg",
+    image: nimg2,
     date: "August 22, 2023",
   },
   {
     title: "The Art of Layering Textures in Interior Design",
     subtitle: "Creating Depth and Warmth Through Material Harmony.",
-    image: "https://framerusercontent.com/images/AkcINRgdRJWagCIMhlfAa6SCpcs.jpeg",
+    image: nimg3,
     date: "March 17, 2023",
   },
   {
     title: "Psychology in Interior Design",
     subtitle: "Shaping Emotions Through Thoughtful Color Choices",
-    image: "https://framerusercontent.com/images/xzFrK8RnnKFFvFnsttyDo4BcCE.jpeg",
+    image: nimg4,
     date: "January 21, 2023",
   },
   {
     title: "Timeless Furniture Pieces Every Home Needs",
     subtitle: "Building a Home That Never Goes Out of Style",
-    image: "https://framerusercontent.com/images/h8rMLidvtxgO37bgs0urvbSKFOk.jpeg",
+    image:nimg5,
     date: "February 22, 2022",
   },
   {
     title: "The Art of Minimalist Interiors",
     subtitle: "Less is More: Designing Spaces That Speak Simplicity",
-    image: "https://framerusercontent.com/images/8a7hE6znKIBRH3lXUx86gimLzmM.jpeg",
+    image:nimg6 ,
     date: "February 5, 2022",
   },
 ];

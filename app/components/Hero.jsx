@@ -1,5 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
+import heroimg from "../imagess/hero.jpg"
 
 const textWords = ['Timeless', 'Comfort', '&', 'Endless', 'Luxury'];
 
@@ -59,7 +60,7 @@ export default function Hero() {
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: 'url(https://framerusercontent.com/images/I1KebQoYSXcDwvUsFzZRi0wIxE.jpeg)',
+              backgroundImage:`url(${heroimg.src})`,
               WebkitMask: 'linear-gradient(0deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,1) 100%) add',
               mask: 'linear-gradient(0deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,1) 100%) add',
               top: 'calc(50.00000000000002% - 100% / 2)',

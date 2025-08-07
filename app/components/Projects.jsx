@@ -1,6 +1,8 @@
+
+
 export default function Projects() {
   return (
-    <div className="">
+    <div className="py-[140px]">
       <div className="">
         <div className="relative">
           <div className="sticky top-0 flex flex-col items-center justify-center bg-[url('https://framerusercontent.com/images/h8rMLidvtxgO37bgs0urvbSKFOk.jpeg')] w-full min-h-screen bg-cover bg-center">

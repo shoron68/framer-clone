@@ -1,6 +1,12 @@
 'use client';
 import { motion } from "framer-motion";
 import Image from "next/image";
+import timg1 from "../imagess/timg1.jpg"
+import timg2 from "../imagess/timg2.jpg"
+import timg3 from "../imagess/timg3.jpg"
+import timg4 from "../imagess/timg4.jpg"
+import timg5 from "../imagess/timg5.jpg"
+import timg6 from "../imagess/timg6.jpg"
 
 const textfade = {
     hidden: { opacity: 0, y: 50 },
@@ -35,32 +41,32 @@ const teamMembers = [
     {
         name: 'Emma Collins',
         role: 'Creative Director',
-        image: 'https://framerusercontent.com/images/VHjVat8amQI84VmcuqK0CulTk4.jpeg',
+        image: timg1 ,
     },
     {
         name: 'Liam Bennett',
         role: 'Lead Furniture Designer',
-        image: 'https://framerusercontent.com/images/or08AT1s7Gsd7r3cBxIPClE1qXo.jpeg',
+        image: timg2,
     },
     {
         name: 'Sophia Turner',
         role: 'Interior Stylist',
-        image: '	https://framerusercontent.com/images/ZkiObwy3gtgUC1r32SlsIZYE.jpeg',
+        image: timg3,
     },
     {
         name: 'Oliver Harris',
         role: 'Space Planner',
-        image: 'https://framerusercontent.com/images/6x4VB4KCen6shYoZmn4SlxHHg.jpeg?scale-down-to=1024',
+        image: timg4,
     },
     {
         name: 'Isabella Reed',
         role: 'Lighting Specialist',
-        image: '	https://framerusercontent.com/images/qLpYxt2t3D25n4MxgyGnnbOX2o.jpeg',
+        image: timg5,
     },
     {
         name: 'Ethan Wright',
         role: 'Client Experience Manager',
-        image: 'https://framerusercontent.com/images/iy4Yjrt6EfSEVReGjIS5qf5vc.jpeg',
+        image: timg6,
     },
 ];
 
