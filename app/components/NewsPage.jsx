@@ -69,14 +69,14 @@ const fadeUpWord = {
 
 export default function NewsPage() {
   return (
-    <div className="pt-[200px] pb-[140px] bg-[#F8EDE3]">
-      <div className="max-w-[1905px] mx-auto px-[50px]">
-        <h2 className="text-[96px] font-archivo font-medium text-[#8D493A] leading-[100%] tracking-[-0.03em] w-[800px] mx-auto text-center flex flex-wrap gap-3 justify-center">
+    <div className="lg:pt-[200px] pt-[100px] lg:pb-[140px] pb-[100px] bg-[#F8EDE3]">
+      <div className="max-w-[1905px] mx-auto lg:px-[50px] px-[20px]">
+        <h2 className="lg:text-[96px] text-[44px] font-archivo font-medium text-[#8D493A] leading-[100%] tracking-[-0.03em] lg:w-[800px] mx-auto text-center flex flex-wrap gap-3 justify-center">
           <motion.span
             variants={fadeUpWord}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.1 }}
             custom={0}
           >
             Expert
@@ -85,7 +85,7 @@ export default function NewsPage() {
             variants={fadeUpWord}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.4 }}
+            viewport={{ once: true, amount: 0.1 }}
             custom={1}
           >
             Insights
@@ -94,7 +94,7 @@ export default function NewsPage() {
             variants={fadeUpWord}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.1 }}
             custom={2}
           >
             and
@@ -103,7 +103,7 @@ export default function NewsPage() {
             variants={fadeUpWord}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.6 }}
+            viewport={{ once: true, amount: 0.1 }}
             custom={3}
           >
             Design
@@ -112,7 +112,7 @@ export default function NewsPage() {
             variants={fadeUpWord}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.7 }}
+            viewport={{ once: true, amount: 0.1 }}
             custom={4}
           >
             Inspiration
@@ -120,20 +120,20 @@ export default function NewsPage() {
         </h2>
 
 
-        <div className="mt-[60px] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+        <div className="lg:mt-[60px] mt-[30px] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
           {cards.map((card, index) => (
             <motion.div
               key={index}
-              className="h-auto w-full max-w-[595px] py-[20px]"
+              className="h-auto w-full lg:max-w-[595px] py-[20px]"
               variants={fadeUp}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
+              viewport={{ once: true, amount: 0.1 }}
               custom={index}
             >
               <div className="overflow-hidden rounded-[10px]">
                 <Image
-                  className="object-cover transition-transform duration-500 ease-in-out hover:scale-105 w-full h-[501px]"
+                  className="object-cover  h-[] transition-transform duration-500 ease-in-out hover:scale-105 w-full lg:h-[501px] h-[300px]"
                   src={card.image}
                   alt={card.title}
                   width={595}
@@ -143,16 +143,16 @@ export default function NewsPage() {
 
               <div className="flex items-center gap-x-[5px] mt-[15px]">
                 <div className="h-[5px] w-[5px] rounded-full bg-[#8D493A]"></div>
-                <p className="text-[14px] font-archivo font-normal text-[#8D493A]">
+                <p className="lg:text-[14px] text-[12px] font-archivo font-normal text-[#8D493A]">
                   {card.date}
                 </p>
               </div>
 
               <div className="mt-[5px]">
-                <h4 className="text-[22px] text-[#8D493A] font-archivo font-medium leading-[100%] tracking-[-0.02em]">
+                <h4 className="lg:text-[22px] text-[18px] text-[#8D493A] font-archivo font-medium leading-[100%] tracking-[-0.02em]">
                   {card.title}
                 </h4>
-                <p className="text-[16px] text-[#8D493A] font-archivo font-medium leading-[100%] tracking-[-0.02em] mt-[15px]">
+                <p className="lg:text-[16px] text-[12px] text-[#8D493A] font-archivo font-medium leading-[100%] tracking-[-0.02em] mt-[15px]">
                   {card.subtitle}
                 </p>
               </div>

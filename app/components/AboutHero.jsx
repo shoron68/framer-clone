@@ -32,15 +32,15 @@ const fadeUp = {
 
 export default function () {
     return (
-        <div className="py-[140px]">
-            <div className="max-w-[1905px] mx-auto px-[50px]">
+        <div className="lg:py-[140px] py-[80px]">
+            <div className="max-w-[1905px] mx-auto lg:px-[50px] px-[20px]">
                 <div className=" flex justify-center items-center ">
-                    <h2 className="text-[96px] font-archivo font-medium text-[#8D493A] leading-[100%] tracking-[-0.03em] w-[800px] mx-auto text-center flex flex-wrap gap-3 justify-center mt-[100px]">
+                    <h2 className="lg:text-[96px] text-[42px] font-archivo font-medium text-[#8D493A] leading-[100%] tracking-[-0.03em] lg:w-[800px] mx-auto text-center flex flex-wrap gap-3 justify-center mt-[100px]">
                         <motion.span
                             variants={fadeUpWord}
                             initial="hidden"
                             whileInView="visible"
-                            viewport={{ once: true, amount: 0.3 }}
+                            viewport={{ once: true, amount: 0.1 }}
                             custom={0}
                         >
                             Crafting
@@ -49,7 +49,7 @@ export default function () {
                             variants={fadeUpWord}
                             initial="hidden"
                             whileInView="visible"
-                            viewport={{ once: true, amount: 0.4 }}
+                            viewport={{ once: true, amount: 0.1 }}
                             custom={1}
                         >
                             Timeless
@@ -58,7 +58,7 @@ export default function () {
                             variants={fadeUpWord}
                             initial="hidden"
                             whileInView="visible"
-                            viewport={{ once: true, amount: 0.5 }}
+                            viewport={{ once: true, amount: 0.1 }}
                             custom={2}
                         >
                             Spaces
@@ -67,7 +67,7 @@ export default function () {
                             variants={fadeUpWord}
                             initial="hidden"
                             whileInView="visible"
-                            viewport={{ once: true, amount: 0.6 }}
+                            viewport={{ once: true, amount: 0.1 }}
                             custom={3}
                         >
                             with
@@ -76,7 +76,7 @@ export default function () {
                             variants={fadeUpWord}
                             initial="hidden"
                             whileInView="visible"
-                            viewport={{ once: true, amount: 0.7 }}
+                            viewport={{ once: true, amount: 0.1 }}
                             custom={4}
                         >
                             Style
@@ -88,10 +88,10 @@ export default function () {
                     variants={fadeUp}
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: true, amount: 0.3 }}
-                    className="mt-[50px]">
+                    viewport={{ once: true, amount: 0.1 }}
+                    className="lg:mt-[50px] mt-[30px]">
                     <Image
-                        className="rounded-[20px]"
+                        className="rounded-[20px] "
                         src="https://framerusercontent.com/images/hTZXDyZnJxuZxbdwIztBbCgMYQ.jpeg"
                         width={1805}
                         height={984}

@@ -49,8 +49,8 @@ export default function ServiceSection() {
 
 
   return (
-    <div className="max-w-[1905px] mx-auto px-[50px]">
-      <div className=" mt-[140px] ml-[920px]  mb-[80px]">
+    <div className="max-w-[1905px] mx-auto lg:px-[50px] px-[20px]">
+      <div className=" lg:mt-[140px] mt-[80px] lg:ml-[920px]  mb-[80px]">
         <div className="">
           <motion.div
             variants={textfade}
@@ -60,7 +60,7 @@ export default function ServiceSection() {
             className="flex items-center  gap-x-[5px]   ">
             <div className="h-[5px] w-[5px] rounded-full bg-[#8D493A]"></div>
             <div className="">
-              <p className="text-[14px] font-archivo font-normal text-[#8D493A]">Our Expertise</p>
+              <p className="lg:text-[14px] text-[12px] font-archivo font-normal text-[#8D493A]">Our Expertise</p>
             </div>
           </motion.div>
           <div className="mt-[10px]">
@@ -70,14 +70,14 @@ export default function ServiceSection() {
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
               custom={1}
-              className="text-[64px] font-archivo font-normal text-[#8D493A] leading-[100%] tracking-[-0.03em] w-[600px]">Selecting the ideal elements to elevate your space</motion.h3>
+              className="lg:text-[64px] text-[36px] font-archivo font-normal text-[#8D493A] leading-[100%] tracking-[-0.03em] lg:w-[600px]">Selecting the ideal elements to elevate your space</motion.h3>
           </div>
         </div>
       </div>
 
       <div className="flex justify-center">
-      <div className="w-full grid md:grid-cols-2 gap-10">
-        <div className="rounded-[10px] overflow-hidden shadow-lg min-h-[835px] relative">
+      <div className="w-full grid md:grid-cols-2 lg:gap-10">
+        <div className="rounded-[10px] overflow-hidden shadow-lg min-h-[835px] relative lg:block hidden">
           <AnimatePresence mode="wait">
             <motion.div
               key={activeIndex}
@@ -98,16 +98,15 @@ export default function ServiceSection() {
           </AnimatePresence>
         </div>
 
-        {/* Right Side: Services */}
-        <div className="flex flex-col justify-center text-[#8D493A]">
+        <div className="flex flex-col justify-center ">
           {services.map((service, i) => (
             <div
               key={i}
               onMouseEnter={() => setActiveIndex(i)}
               className="flex items-start gap-x-[20px] py-2 border-b border-[#8D493A] hover:bg-[#8D493A] hover:text-[#F8EDE3] hover:pl-[20px] duration-400 cursor-pointer"
             >
-              <p className="text-[16px] font-archivo font-medium">{String(i + 1).padStart(2, "0")}</p>
-              <p className="text-[28px] font-archivo font-medium">{service.title}</p>
+              <p className="lg:text-[16px] text-[12px] text-[#8D493A] font-archivo font-medium">{String(i + 1).padStart(2, "0")}</p>
+              <p className="lg:text-[28px] text-[20px] text-[#8D493A] font-archivo font-medium">{service.title}</p>
             </div>
           ))}
         </div>

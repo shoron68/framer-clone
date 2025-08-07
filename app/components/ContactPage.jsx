@@ -31,12 +31,12 @@ const fadeUpWord = {
 
 export default function ContactPage() {
     return (
-        <div className="py-[200px] bg-[#F8EDE3]">
-          <div className="max-w-[1905px] mx-auto px-[50px]">
+        <div className="lg:py-[200px] py-[100px] bg-[#F8EDE3]">
+          <div className="max-w-[1905px] mx-auto lg:px-[50px] px-[20px]">
 
             <div className="">
                 <div className="">
-                    <h2 className="text-[96px] font-archivo font-medium text-[#8D493A] leading-[100%] tracking-[-0.03em] w-[800px] mx-auto text-center flex flex-wrap gap-3 justify-center">
+                    <h2 className="lg:text-[96px] text-[44px] font-archivo font-medium text-[#8D493A] leading-[100%] tracking-[-0.03em] lg:w-[800px] mx-auto text-center flex flex-wrap gap-3 justify-center">
                       <motion.span
                         variants={fadeUpWord}
                         initial="hidden"
@@ -100,7 +100,7 @@ export default function ContactPage() {
               viewport={{ once: true, amount: 0.3 }}
                 className="grid grid-cols-1 lg:grid-cols-2 gap-3 items-stretch mt-[60px]">
                     <div className="w-full h-full">
-                        <div className="w-full h-full overflow-hidden rounded-[10px]">
+                        <div className="w-full lg:h-full h-[336px] overflow-hidden rounded-[10px]">
                             <Image
                                 src="https://framerusercontent.com/images/6xHF1tiKqVhkLcgxSQVr1G2X8.jpeg"
                                 alt="Image"
@@ -112,15 +112,15 @@ export default function ContactPage() {
                     </div>
 
                     <div className="w-full h-full">
-                        <div className="w-full h-full border-[1px] border-[#8a463993] bg-[#F7E9DC] rounded-[10px]">
-                            <div className="flex justify-center items-center ">
-                                <div className="mt-[350px]">
-                                    <div className="flex gap-x-[20px]">
+                        <div className="w-full h-full border-[1px] border-[#8a463971] bg-[#F7E9DC] rounded-[10px]">
+                            <div className="lg:flex justify-center items-center lg:mx-0 mx-[25px] ">
+                                <div className="lg:mt-[350px] mt-[20px] lg:mb-0 mb-[20px]">
+                                    <div className="lg:flex gap-x-[20px]">
                                         <div className="">
-                                            <input type="text" placeholder="First Name" required className="border border-[#8a463993] focus:border-[#8D493A] focus:ring-1 focus:ring-[#8D493A] outline-none px-4 py-2 rounded w-[400px] font-archivo font-normal text-[#8D493A]" />
+                                            <input type="text" placeholder="First Name" required className="border border-[#8a463993] focus:border-[#8D493A] focus:ring-1 focus:ring-[#8D493A] outline-none px-4 py-2 rounded lg:w-[400px] w-full font-archivo font-normal text-[#8D493A]" />
                                         </div>
-                                        <div className="">
-                                            <input type="text" placeholder="Last Name" required className="border border-[#8a463993] focus:border-[#8D493A] focus:ring-1 focus:ring-[#8D493A] outline-none px-4 py-2 rounded w-[400px] font-archivo font-normal text-[#8D493A]" />
+                                        <div className="lg:mt-0 mt-[25px]">
+                                            <input type="text" placeholder="Last Name" required className="border border-[#8a463993] focus:border-[#8D493A] focus:ring-1 focus:ring-[#8D493A] outline-none px-4 py-2 rounded lg:w-[400px] w-full font-archivo font-normal text-[#8D493A]" />
                                         </div>
                                     </div>
                                     <div className="my-[20px]">

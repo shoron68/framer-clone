@@ -46,9 +46,9 @@ const textfade = {
 
 
     return (
-        <div className="max-w-[1905px] mx-auto px-[50px]">
-            <div className="py-[140px]">
-                <div className="flex justify-between">
+        <div className="max-w-[1905px] mx-auto lg:px-[50px] px-[20px]">
+            <div className="lg:py-[140px] py-[140px]">
+                <div className="lg:flex justify-between">
                     <div className="">
                         <motion.div
                          variants={textfade}
@@ -58,10 +58,10 @@ const textfade = {
                         className="flex items-center gap-x-[5px] ">
                             <div className="h-[5px] w-[5px] rounded-full bg-[#8D493A]"></div>
                             <div className="">
-                                <p className="text-[14px] font-archivo font-normal text-[#8D493A]">Our Approach</p>
+                                <p className="lg:text-[14px] text-[12px] font-archivo font-normal text-[#8D493A]">Our Approach</p>
                             </div>
                         </motion.div>
-                        <div className="max-w-[600px] mt-[10px]">
+                        <div className="lg:max-w-[600px] mt-[10px]">
                             <div className="">
                                 <motion.h2
                                  variants={textfade}
@@ -69,9 +69,9 @@ const textfade = {
                             whileInView="visible"
                             viewport={{ once: true, amount: 0.3 }}
                             custom={1}
-                                className="text-[64px] font-archivo font-normal text-[#8D493A] leading-[110%] tracking-[-10%] ">A Vision Shaped by Elegance and Expertise</motion.h2>
+                                className="lg:text-[64px] text-[36px] font-archivo font-normal text-[#8D493A] leading-[110%] tracking-[-10%] ">A Vision Shaped by Elegance and Expertise</motion.h2>
                             </div>
-                            <div className="mx-w-[550px] mt-[39vh]">
+                            <div className="lg:mx-w-[550px] lg:mt-[39vh] mt-[10px]">
                                 <div className="">
                                     <motion.p 
                                     variants={textfade}
@@ -79,23 +79,23 @@ const textfade = {
                             whileInView="visible"
                             viewport={{ once: true, amount: 0.3 }}
                             custom={2}
-                                    className="text-[16px] font-archivo font-medium text-[#844436]">We believe every space should tell a story that reflects its unique personality and the people who inhabit it.</motion.p>
+                                    className="lg:text-[16px] text-[14px] font-archivo font-medium text-[#844436]">We believe every space should tell a story that reflects its unique personality and the people who inhabit it.</motion.p>
                                     <motion.p
                                     variants={textfade}
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true, amount: 0.3 }}
                             custom={3}
-                                    className="mt-[20px] text-[16px] font-archivo font-medium text-[#844436] ">With a thoughtful and intentional approach, we design spaces that exude balance, harmony, and authenticity. Our process is collaborative and meticulous, grounded in the philosophy that true beauty lies in the subtle details that make a space feel like home.</motion.p>
+                                    className="lg:mt-[20px] mt-[10px] lg:text-[16px] text-[14px] font-archivo font-medium text-[#844436] ">With a thoughtful and intentional approach, we design spaces that exude balance, harmony, and authenticity. Our process is collaborative and meticulous, grounded in the philosophy that true beauty lies in the subtle details that make a space feel like home.</motion.p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="">
-                        <div className="relative overflow-hidden w-[877px] h-[763px] rounded-[15px]">
+                        <div className="relative overflow-hidden lg:w-[877px] lg:h-[763px] rounded-[15px] lg:mt-0 mt-[30px]">
                             <div
                                 ref={imgRef}
-                                className={` w-[877px] h-[763px] transition-transform duration-700 ease-out ${inView ? 'scale-100' : 'scale-105'
+                                className={` lg:w-[877px] lg:h-[763px] w-[398px] h-[350px] transition-transform duration-700 ease-out ${inView ? 'scale-100' : 'scale-105'
                                     }`}
                             >
                                 <Image

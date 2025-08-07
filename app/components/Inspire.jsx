@@ -30,9 +30,9 @@ const fadeUp = {
 
 export default function Inspire() {
     return (
-        <div className=" pt-[140px]  pb-[200px] ">
+        <div className=" lg:pt-[140px] pt-[80px]  lg:pb-[200px] pb-[80px] ">
 
-            <div className="max-w-[1905px] mx-auto px-[50px]">
+            <div className="max-w-[1905px] mx-auto lg:px-[50px] px-[20px]">
                 <div className="">
                     <motion.div
                     variants={textfade}
@@ -42,7 +42,7 @@ export default function Inspire() {
                     className="flex items-center gap-x-[5px] ">
                         <div className="h-[5px] w-[5px] rounded-full bg-[#8D493A]"></div>
                         <div className="">
-                            <p className="text-[14px] font-archivo font-normal text-[#8D493A]">News</p>
+                            <p className="lg:text-[14px] text-[12px] font-archivo font-normal text-[#8D493A]">News</p>
                         </div>
                     </motion.div>
                     <motion.div
@@ -51,28 +51,28 @@ export default function Inspire() {
                             whileInView="visible"
                             viewport={{ once: true, amount: 0.3 }}
                             custom={1}
-                    className="flex justify-between items-center mt-[10px]">
+                    className="lg:flex justify-between items-center mt-[10px]">
                         <div className="">
-                            <h3 className="text-[64px] font-archivo font-normal text-[#8D493A] leading-[100%] tracking-[-0.02em] w-[500px]">Stay Inspired with Interior Trends</h3>
+                            <h3 className="lg:text-[64px] text-[36px] font-archivo font-normal text-[#8D493A] leading-[100%] tracking-[-0.02em] lg:w-[500px]">Stay Inspired with Interior Trends</h3>
                         </div>
-                        <div className="mt-[60px]">
-                            <button className="py-[16px] px-[26px] bg-[#8D493A] text-[#F8EDE3] font-archivo font-medium rounded-[5px]">View All News</button>
+                        <div className="lg:mt-[60px]">
+                            <button className="py-[16px] px-[26px] lg:text-[16px] text-[14px] bg-[#8D493A] text-[#F8EDE3] font-archivo font-medium rounded-[5px] leading-[100%]">View All News</button>
                         </div>
                     </motion.div>
                 </div>
                 <div className="">
 
-                    <div className="grid grid-cols-3 grid-rows-1 gap-2 mt-[50px]">
+                    <div className="grid lg:grid-cols-3 grid-cols-1 lg:grid-rows-1 grid-rows-3 gap-2 mt-[50px]">
                         <div >
                             <motion.div
                             variants={fadeUp}
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true, amount: 0.3 }}
-                            className="h-[501px] w-[595px]">
+                            className="lg:h-[501px] lg:w-[595px] w-full h-full">
                                 <div className=" overflow-hidden rounded-[10px]">
                                     <Image
-                                        className="h-[505px] w-[595px] object-cover transition-transform duration-500 ease-in-out hover:scale-105"
+                                        className="lg:h-[505px] h-[338px] w-[398px] lg:w-[595px] object-cover transition-transform duration-500 ease-in-out hover:scale-105"
                                         src="https://framerusercontent.com/images/bZdh0mETTRfnrDNMinaVWCZqhqs.jpeg"
                                         width={595}
                                         height={501}
@@ -105,10 +105,10 @@ export default function Inspire() {
                             whileInView="visible"
                             viewport={{ once: true, amount: 0.3 }}
                             custom={1}
-                            className="h-[501px] w-[595px]">
+                            className="lg:h-[501px] lg:w-[595px] w-full h-full lg:mt-0 mt-[20px]">
                                 <div className=" overflow-hidden rounded-[10px]">
                                     <Image
-                                        className="h-[505px] w-[595px] object-cover transition-transform duration-500 ease-in-out hover:scale-105"
+                                        className="lg:h-[505px] h-[338px] w-[398px] lg:w-[595px] object-cover transition-transform duration-500 ease-in-out hover:scale-105"
                                         src="https://framerusercontent.com/images/HXD1LGGH4sdyu2AfKcILOBWjBM.jpeg"
                                         width={595}
                                         height={501}
@@ -140,10 +140,10 @@ export default function Inspire() {
                             whileInView="visible"
                             viewport={{ once: true, amount: 0.3 }}
                             custom={2}
-                            className="h-[501px] w-[595px]">
+                            className="lg:h-[501px] lg:w-[595px] w-full h-full lg:mt-0 mt-[20px]">
                                 <div className=" overflow-hidden rounded-[10px]">
                                     <Image
-                                        className="h-[505px] w-[595px] object-cover transition-transform duration-500 ease-in-out hover:scale-105"
+                                        className="lg:h-[505px] h-[338px] w-[398px] lg:w-[595px] object-cover transition-transform duration-500 ease-in-out hover:scale-105"
                                         src="https://framerusercontent.com/images/xzFrK8RnnKFFvFnsttyDo4BcCE.jpeg"
                                         width={595}
                                         height={501}

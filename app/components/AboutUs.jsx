@@ -55,9 +55,9 @@ export default function AboutUs() {
         };
     }, []);
     return (
-        <div className="max-w-[1905px] mx-auto px-[50px]">
-            <div className="py-[140px]">
-                <div className="flex justify-between">
+        <div className="max-w-[1905px] mx-auto lg:px-[50px] px-[20px]">
+            <div className="lg:py-[140px] py-[80px]">
+                <div className="lg:flex justify-between">
                     <div className="">
                         <motion.div
                             variants={textfade}
@@ -67,10 +67,10 @@ export default function AboutUs() {
                             className="flex items-center gap-x-[5px]">
                             <div className="h-[5px] w-[5px] rounded-full bg-[#8D493A]"></div>
                             <div className="">
-                                <p className="text-[14px] font-archivo font-normal text-[#8D493A]">About Us</p>
+                                <p className="lg:text-[14px] text-[12px] font-archivo font-normal text-[#8D493A]">About Us</p>
                             </div>
                         </motion.div>
-                        <div className="max-w-[600px] mt-[10px]">
+                        <div className="lg:max-w-[600px] mt-[10px]">
                             <div className="">
                                 <motion.h2
                                     variants={textfade}
@@ -78,9 +78,9 @@ export default function AboutUs() {
                                     custom={1}
                                     whileInView="visible"
                                     viewport={{ once: true, amount: 0.3 }}
-                                    className="text-[64px] font-archivo font-normal text-[#8D493A] leading-[110%] tracking-[-10%] ">Where Spaces Inspire, and Design Comes Alive</motion.h2>
+                                    className="lg:text-[64px] text-[40px] font-archivo font-normal text-[#8D493A] leading-[110%] tracking-[-10%] ">Where Spaces Inspire, and Design Comes Alive</motion.h2>
                             </div>
-                            <div className="mx-w-[550px] mt-[32vh]">
+                            <div className="mx-w-[550px] lg:mt-[32vh] mt-[10px]">
                                 <div className="">
                                     <motion.p
                                         variants={textfade}
@@ -89,7 +89,7 @@ export default function AboutUs() {
                                         custom={0}
                                         whileInView="visible"
                                         viewport={{ once: true, amount: 0.3 }}
-                                        className="text-[16px] font-archivo font-medium text-[#844436]">At Troscán, we believe that every space has a story to tell. As a premier furniture design and room decorating agency.</motion.p>
+                                        className="lg:text-[16px] text-[14px] font-archivo font-medium text-[#844436da]">At Troscán, we believe that every space has a story to tell. As a premier furniture design and room decorating agency.</motion.p>
                                     <motion.p
                                         variants={textfade}
                                         initial="hidden"
@@ -97,9 +97,9 @@ export default function AboutUs() {
                                         custom={1}
                                         whileInView="visible"
                                         viewport={{ once: true, amount: 0.3 }}
-                                        className="mt-[20px] text-[16px] font-archivo font-medium text-[#844436] "> Our expert team blends timeless craftsmanship with innovative designs, ensuring each piece and layout reflects your unique taste and lifestyle. Whether you're looking to reimagine your living room.</motion.p>
+                                        className="lg:mt-[20px] mt-[10px] lg:text-[16px] text-[14px] font-archivo font-medium text-[#844436da] "> Our expert team blends timeless craftsmanship with innovative designs, ensuring each piece and layout reflects your unique taste and lifestyle. Whether you're looking to reimagine your living room.</motion.p>
                                 </div>
-                                <div className="mt-[20px]">
+                                <div className="lg:mt-[20px] mt-[10px]">
                                     <motion.button
                                         variants={buttonfade}
                                         initial="hidden"
@@ -112,11 +112,11 @@ export default function AboutUs() {
                             </div>
                         </div>
                     </div>
-                    <div className="">
-                        <div className="relative overflow-hidden w-[877px] h-[763px] rounded-[15px]">
+                    <div className="lg:mt-0 mt-[25px]">
+                        <div className="relative overflow-hidden lg:w-[877px] lg:h-[763px] rounded-[15px]">
                             <div
                                 ref={imgRef}
-                                className={` w-[877px] h-[763px] transition-transform duration-700 ease-out ${inView ? 'scale-100' : 'scale-105'
+                                className={` lg:w-[877px] w-full h-[400px] lg:h-[763px] transition-transform duration-700 ease-out ${inView ? 'scale-100' : 'scale-105'
                                     }`}
                             >
                                 <Image

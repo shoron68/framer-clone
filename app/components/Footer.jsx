@@ -1,12 +1,19 @@
+import Link from "next/link";
+
 export default function () {
     return (
         <div className="bg-[#8D493A]">
             <div className="max-w-[1905px] mx-auto px-[50px]">
-                <div className="py-[140px]">
-                    <div className="flex justify-center gap-x-[100px]">
+                <div className="lg:py-[140px] py-[80px]">
+                    <div className="lg:hidden block">
+                        <h3 className="text-[20px] font-inter text-[#8D493A] font-bold">
+                            <Link href="/">Troscán</Link>
+                        </h3>
+                    </div>
+                    <div className="lg:flex justify-center gap-x-[100px]">
                         <div className="">
                             <h2 className="text-[14px] text-[#f8ede3b9] font-archivo font-normal text-center ">Sitemap</h2>
-                            <ul className="mt-[20px] text-center">
+                            <ul className="lg:mt-[20px] mt-[10px] text-center">
                                 <li><a href="" className="text-[22px] font-inter font-normal text-[#F8EDE3] ">About</a></li>
                                 <li><a href="" className="text-[22px] font-inter font-normal text-[#F8EDE3] ">Projects</a></li>
                                 <li><a href="" className="text-[22px] font-inter font-normal text-[#F8EDE3] ">News</a></li>
@@ -16,7 +23,7 @@ export default function () {
 
                         <div className="">
                             <h2 className="text-[14px] text-[#f8ede3b9] font-archivo font-normal  text-center">Socials</h2>
-                            <ul className="mt-[20px] text-center">
+                            <ul className="lg:mt-[20px] mt-[10px] text-center">
                                 <li><a href="" className="text-[22px] font-inter font-normal text-[#F8EDE3] ">Facebook</a></li>
                                 <li><a href="" className="text-[22px] font-inter font-normal text-[#F8EDE3] ">Instagram</a></li>
                                 <li><a href="" className="text-[22px] font-inter font-normal text-[#F8EDE3]">LinkedIn</a></li>
@@ -26,7 +33,7 @@ export default function () {
 
                         <div className="">
                             <h2 className="text-[14px] text-[#f8ede3b9] font-archivo font-normal  text-center">More</h2>
-                            <ul className="mt-[20px] text-center">
+                            <ul className="lg:mt-[20px] mt-[10px] text-center">
                                 <li><a href="" className="text-[22px] font-inter font-normal text-[#F8EDE3]">License</a></li>
                                 <li><a href="" className="text-[22px] font-inter font-normal text-[#F8EDE3]">Grainient</a></li>
                                 <li><a href="" className="text-[22px] font-inter font-normal text-[#F8EDE3]">Inspirux</a></li>
@@ -37,11 +44,11 @@ export default function () {
 
 
                 </div>
-            <div className="border-t-[1px] border-[#f8ede3a1]">
-            <div className="py-[30px]">
-                <p className="text-[14px] font-archivo font-normal text-[#f8ede3c0] leading-[100%] text-center">© 2025, All rights reserved</p>
-            </div>
-            </div>
+                <div className="border-t-[1px] border-[#f8ede3a1]">
+                    <div className="py-[30px]">
+                        <p className="text-[14px] font-archivo font-normal text-[#f8ede3c0] leading-[100%] text-center">© 2025, All rights reserved</p>
+                    </div>
+                </div>
             </div>
         </div>
     )

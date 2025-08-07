@@ -13,58 +13,48 @@ const containerVariants = {
   },
 };
 
-const wordVariants = {
-  hidden: { opacity: 0, y: 40 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.6,
-      ease: [0.25, 0.46, 0.45, 0.94]
-    }
-  },
-};
-
-const subtextVariants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.8,
-      delay: 1.5,
-      ease: [0.25, 0.46, 0.45, 0.94]
-    }
-  },
-};
 
 const buttonContainerVariants = {
   hidden: {},
   visible: {
     transition: {
       staggerChildren: 0.1,
-      delayChildren: 2.0,
+      delayChildren: 1.0,
     },
   },
 };
 
-const buttonVariants = {
-  hidden: { opacity: 0, y: 0 },
-  visible: {
+const fadeUpWord = {
+  hidden: { opacity: 0, y: 50 },
+  visible: (i) => ({
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.5,
-      ease: [0.25, 0.46, 0.45, 0.94]
-    }
-  },
+      delay: i * 0.1,
+      duration: 0.6,
+      ease: 'easeInOut',
+    },
+  }),
+};
+
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 0 },
+  visible: (i) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: "easeOut",
+    },
+  }),
 };
 
 export default function Hero() {
   return (
     <section className="relative w-full h-[100vh] overflow-hidden bg-[#75410d]">
 
-      <div className="mt-[310px]">
+      <div className="lg:mt-[310px] mt-[360px]">
         <div className="absolute inset-0">
           <div
             className="absolute inset-0 bg-cover bg-center"
@@ -94,37 +84,33 @@ export default function Hero() {
               {textWords.map((wordText, idx) => (
                 <motion.span
                   key={idx}
+                  custom={idx}
                   className="inline-block mx-1 sm:mx-1.5 md:mx-1.5"
-                  variants={wordVariants}
+                  variants={fadeUpWord}
                 >
                   {wordText}
                 </motion.span>
               ))}
             </motion.h1>
             <motion.div
-              className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 md:gap-8"
+              className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 md:gap-3"
               variants={buttonContainerVariants}
               initial="hidden"
               animate="visible"
             >
               <motion.button
-                className="px-6 sm:px-8 py-3 sm:py-4 bg-[#F8EDE3] text-[#8D493A] rounded-lg font-archivo font-medium text-sm sm:text-base hover:bg-[#E4CEBA] hover:shadow-lg transition-all duration-300 min-w-[140px] sm:min-w-[160px]"
-                variants={buttonVariants}
-                whileHover={{ scale: 1, y: 0 }}
-                whileTap={{ scale: 0.98 }}
-              >
+                className="lg:px-8 lg:w-0 w-full leading-[100%] cursor-pointer py-[17px] bg-[#F8EDE3] text-[#8D493A] rounded-[5px] font-archivo font-medium text-sm sm:text-base hover:bg-[#E4CEBA] hover:shadow-lg transition-all duration-300 min-w-[140px] sm:min-w-[160px]"
+                variants={fadeUp}>
                 Our Vision
               </motion.button>
 
               <motion.button
-                className="px-6 sm:px-8 py-3 sm:py-4 border-2 border-white text-white rounded-lg font-archivo font-medium text-sm sm:text-base hover:bg-white hover:text-[#8D493A] hover:shadow-lg transition-all duration-300 min-w-[140px] sm:min-w-[160px]"
-                variants={buttonVariants}
-                whileHover={{ scale: 1, y: 0 }}
-                whileTap={{ scale: 0.98 }}
-              >
+                className="lg:px-8 lg:w-auto w-full py-[17px] leading-[100%] cursor-pointer border-[1px] border-white text-white rounded-[5px] font-archivo font-medium text-sm sm:text-base hover:bg-white hover:text-[#8D493A] hover:shadow-lg transition-all duration-300 min-w-[140px] sm:min-w-[160px]"
+                variants={fadeUp}>
                 Explore Expertise
               </motion.button>
             </motion.div>
+
           </div>
         </div>
       </div>

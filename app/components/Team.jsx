@@ -66,8 +66,8 @@ const teamMembers = [
 
 export default function Team() {
     return (
-        <div className="py-[140px]">
-            <div className="max-w-[1905px] mx-auto px-[50px]">
+        <div className="lg:py-[140px]">
+            <div className="max-w-[1905px] mx-auto lg:px-[50px] px-[20px]">
                 <div className="">
                     <motion.div
                      variants={textfade}
@@ -77,17 +77,17 @@ export default function Team() {
                     className="flex items-center justify-center gap-x-[5px] ">
                         <div className="h-[5px] w-[5px] rounded-full bg-[#8D493A]"></div>
                         <div className="">
-                            <p className="text-[14px] font-archivo font-normal text-[#8D493A]">Our Team</p>
+                            <p className="lg:text-[14px] text-[12px] font-archivo font-normal text-[#8D493A]">Our Team</p>
                         </div>
                     </motion.div>
-                    <div className="mt-[20px]">
+                    <div className="lg:mt-[20px] mt-[20px]">
                         <motion.h2
                          variants={textfade}
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true, amount: 0.3 }}
                             custom={1}
-                        className="text-[64px] font-archivo font-normal text-[#8D493A] tracking-[-0.03em] text-center leading-[100%]">Meet the Visionaries <br /> Behind Troscán</motion.h2>
+                        className="lg:text-[64px] text-[36px] font-archivo font-normal text-[#8D493A] tracking-[-0.03em] text-center leading-[100%]">Meet the Visionaries <br /> Behind Troscán</motion.h2>
                     </div>
                 </div>
                 <div className="mt-[50px]">
@@ -102,7 +102,7 @@ export default function Team() {
                                 key={i}
                                 className="rounded-[10px] overflow-hidden bg-[#ffffff] shadow-md max-w-full"
                             >
-                                <div className="w-full h-[495px] relative">
+                                <div className="w-full lg:h-[495px] h-[331px] relative">
                                     <Image
                                         src={member.image}
                                         alt={member.name}
