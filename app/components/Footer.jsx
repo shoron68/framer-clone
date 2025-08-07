@@ -14,10 +14,10 @@ export default function () {
                         <div className="">
                             <h2 className="text-[14px] text-[#f8ede3b9] font-archivo font-normal text-center ">Sitemap</h2>
                             <ul className="lg:mt-[20px] mt-[10px] text-center">
-                                <li><a href="" className="text-[22px] font-inter font-normal text-[#F8EDE3] ">About</a></li>
-                                <li><a href="" className="text-[22px] font-inter font-normal text-[#F8EDE3] ">Projects</a></li>
-                                <li><a href="" className="text-[22px] font-inter font-normal text-[#F8EDE3] ">News</a></li>
-                                <li><a href="" className="text-[22px] font-inter font-normal text-[#F8EDE3] ">Contact</a></li>
+                                <li className="text-[22px] font-inter font-normal text-[#F8EDE3] "><Link href="/about">About</Link></li>
+                                <li className="text-[22px] font-inter font-normal text-[#F8EDE3] "><Link href="/project">Projects</Link></li>
+                                <li className="text-[22px] font-inter font-normal text-[#F8EDE3] "><Link href="/link">News</Link></li>
+                                <li className="text-[22px] font-inter font-normal text-[#F8EDE3] "><Link href="/contact">Contact</Link></li>
                             </ul>
                         </div>
 
